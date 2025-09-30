@@ -17,7 +17,7 @@ pipeline {
             steps {
                 //git 'https://github.com/ahmedanasdev/go-webapp-sample.git' تجربه انى عامل كلون فوق 
                 sh 'go build .'
-                sh './go-webapp-sample' 
+                sh 'nohup ./go-webapp-sample &'
                 }
             }
             stage('Run'){
