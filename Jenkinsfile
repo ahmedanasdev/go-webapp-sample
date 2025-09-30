@@ -1,10 +1,10 @@
 pipeline {
-    agent any//{
-        //docker { image 'golang:latest' }
-    //}
-    tools {
-        go 'go-1.22'
+    agent {
+        docker { image 'golang:latest' }
     }
+    //tools {
+    //    go 'go-1.22'
+    //}
     //environment {GO111MODULE='on'}
         stages {
             stage('Test') {
