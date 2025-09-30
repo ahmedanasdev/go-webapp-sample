@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        docker { image 'golang:1.21' }
+        docker { image 'golang:latest' }
     }
     //tools {go-1/17'}
     //environment {GO111MODULE='on'}
